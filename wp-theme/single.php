@@ -25,7 +25,12 @@
           </div>
 
           <?php  
-          
+          if(comments_open() || get_comment_number()) {
+
+            comments_template();
+          }
+
+          endwhile
           
           ?>
         </div>
@@ -33,3 +38,4 @@
 </div>
 
 
+<?php get_footer(); ?>

@@ -6,7 +6,7 @@
     <title>Document</title>
     <?php
     wp_head();
-<<<<<<< HEAD
+
     
     ?>
 </head>
@@ -23,7 +23,7 @@ if(is_front_page()){
         'theme_location'=>'primary'
     ));
     ?>
-=======
+
 
     ?>
 </head>
@@ -56,4 +56,4 @@ if(is_front_page()){
      </section>
 
      <?php endif; ?>
->>>>>>> f0e4dce08560f8b770c1e35cd1101e2d46511a83
+

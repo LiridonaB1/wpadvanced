@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 <?php
 wp_footer(); 
 
 ?>
-=======
+
 <footer class="site-footer">
 
    <div class="container">
@@ -16,6 +16,6 @@ wp_footer();
 </div>
 
 <?php wp_footer();?>
->>>>>>> f0e4dce08560f8b770c1e35cd1101e2d46511a83
+
 </body>
 </html>

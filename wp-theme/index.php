@@ -1,7 +1,7 @@
 
 <?php  get_header(); ?>
 
-<<<<<<< HEAD
+
 <?php
 
 if(have_posts()):
@@ -14,7 +14,7 @@ if(have_posts()):
     <?php endif; ?>
 <?php  get_footer(); ?>
 
-=======
+
 
 <div id="content" class="site-content">
    <div id="primary" class="content-area">
@@ -57,4 +57,4 @@ if(have_posts()):
 
 
 <?php  get_footer(); ?>
->>>>>>> f0e4dce08560f8b770c1e35cd1101e2d46511a83
+

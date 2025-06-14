@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php 
 /* Template Name: About-me Template*/
 get_header(); ?>
@@ -15,7 +15,7 @@ if(have_posts()):
 
 <?php  get_footer(); ?>
 
-=======
+
 
 <?php 
 /* Template Name: About-me Template*/

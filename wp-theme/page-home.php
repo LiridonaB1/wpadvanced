@@ -56,7 +56,7 @@
 
                 if($postlist->have_posts()):
                     while($postlist->have_posts()): $postlist->the_post();
-                    get_templete_parts('parts/content', 'latest-news');
+                    get_templete_part('parts/content', 'latest-news');
                 endwhile;
                 wp_reset_postdata();
             else:?>

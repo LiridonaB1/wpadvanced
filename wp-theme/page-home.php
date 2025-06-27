@@ -1,5 +1,4 @@
 <?php  get_header(); ?>
-
 <div id="content" class="site-content">
    <div id="primary" class="content-area">
      <main id="main" class="site-main">
@@ -51,7 +50,7 @@
 
             if($postlist->have_posts()):
                 while($postlist->have_posts()): $postlist->the_post();
-                get_template_parts('parts/content', 'latest-news');
+                get_template_part('parts/content', 'latest-news');
                endwhile;
                wp_reset_postdata();
             else:?>
@@ -63,6 +62,7 @@
 
         </div>
        </section>
+
      </main>
    </div>
 </div>

@@ -16,7 +16,7 @@
            </div>
 
            <div class="pages prevoius">
-              <?php prevoius_post_link('%link &raqou;');  ?>
+              <?php previous_post_link('%link &raqou;');  ?>
           </div>
 
     </div>

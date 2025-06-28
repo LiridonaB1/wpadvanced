@@ -31,6 +31,35 @@ get_header();
 
                 </section>
 
+              <section class="about-what-we-cover">
+                <div class="container">
+                <h2>What we conver</h2>
+                <ul>
+                  <li>proraming tutorials and tips</li>
+                  <li>software and app reviews</li>
+                  <li>AI, machine learning and data science insights</li>
+                  <li>webdevelopment, devops, and clous computing</li>
+                  <li>trendes in tech and indrustry news</li>
+                </ul>
+
+                </div>
+
+              </section>
+
+              <section class="about-contact">
+                <div class="container">
+                  <h2>want to connect</h2>
+                <p>we love hearing from our readers! reach out to us via our <a href="/contact">contact page</a> or follow us on social media to stay update.</p>
+                
+ 
+                </div>
+
+              </section>
+
+
+
     </main>
 </div>
+
+<?php  get_footer();     ?>
 

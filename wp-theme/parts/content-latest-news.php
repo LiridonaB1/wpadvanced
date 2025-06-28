@@ -1,6 +1,7 @@
 <article class="latest-news">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <? if(has_post_thumbnail());  ?>
 
@@ -31,6 +32,9 @@
     
 =======
 <?php  if(has_post_thumbnail());   ?>
+=======
+<?php  if(has_post_thumbnail()):   ?>
+>>>>>>> 543f94dd56e184567e949a9ea15af2bf6e5d2241
 
     <a href=" <?php  the_permalink(); ?>">  <?php  the_post_thumbnail("large");?> </a>
 

@@ -1,25 +1,4 @@
-<<<<<<< HEAD
-<?php 
-/*
- Template Name: About ME
 
-*/
-
-get_header(); ?>
-
-
-
-   <?php
-   if(have_posts()):
-   while(have_posts()): the_post(); ?>
-   <h1><?php the_title(); ?></h1>
-    <small>posted on: <?php the_time('F j,Y') ?> at <?php the_time('g:i a')?> in <?php the_category(); ?></small>
-   <p><?php the_content(); ?></p>
-   <?php endwhile; ?>
-   <?php endif; ?>
-
-<?php  get_footer(); ?>
-=======
 <?php
 /*
 Template Name: About Page
@@ -49,9 +28,36 @@ get_header();
                 <p>Our goal is simple: to empower curious minds and passionate techies by delivering accurate, useful, and accessible content. Whether you're a seasoned developer or just getting started, we aim to be your go-to resource for tech knowledge.</p>
             </div>
         </section>
+
+        <section class="about-what-we-cover">
+            <div class="container">
+                <h2>What We Cover</h2>
+                <ul>
+                    <li>Programming tutorials and tips</li>
+                    <li>Software and app reviews</li>
+                    <li>AI, machine learning and  data science insights</li>
+                    <li> web development, Devops, and cloud computing</li>
+                    <li> Trends in tech and industry news</li>
+                </ul>
+
+              </div>   
+          </section>
+
+          <section class="about-contact">
+            <div class="container">
+                <h2>Want to Connect</h2>
+                <p> We love hearing from our readers! Reach out to us via our <a href="/contact">Contact page</a>or follow us on social media to stay updated.</p>
+
+
+            </div>
+
+          </section>
  
         
     </main>
 </div>
+
+
+<?php get_footer(); ?>
  
->>>>>>> 543f94dd56e184567e949a9ea15af2bf6e5d2241
+

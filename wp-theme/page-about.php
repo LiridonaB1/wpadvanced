@@ -27,5 +27,28 @@ get_header();
                     conntent. Whether you're a seasonded developer or just getting started, we aim tobe your go-to resource for tech knoledge.</p>
             </div>
         </section>
+
+        <section class="about-what-we-cover">
+            <div class="container">
+                <h2>What We Cover</h2>
+                <ul>
+                    <li>Programing tutorials and tips</li>
+                    <li>Software and app reviews</li>
+                    <li>AI, machine learining and data science insights</li>
+                    <li>Web development, devOps , and cloud computing</li>
+                    <li>Trends in tech and industry news</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about-contact">
+            <div class="container">
+                <h2>Want to Connect?</h2>
+                <p>We love hearing from our readers! Reach out to us via our <a href="/contact">Contact page</a> or follow us on social media to stay updated.</p>
+                
+            </div>
+        </section>
     </main>
 </div>
+
+<?php get_footer();   ?>

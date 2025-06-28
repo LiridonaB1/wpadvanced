@@ -1,37 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<?php
-/* Template Name: About-me Template*/
-get_header(); ?>
-<?php
-if(have_posts()):
-    while(have_posts()): the_post();?>
-    <h1><?php the_title(); ?></h1>
-    <small> Posted on: <?php the_time ('F j,Y'); ?> at <?php the_time('g:i a');?> in <?php the_category();?></small>
 
-    <p><?php the_content();?></p>
-    <?php endwhile; ?>
-    <?php endif; ?>
-; 
-<?php get_footer(); ?>
-=======
-
-<?php 
-/* Template Name: About-me Template*/
-get_header(); ?>
-
-<?php
-
-   if(have_posts()):
-   while(have_posts()): the_post(); ?>
-   <h1><?php the_title(); ?></h1>
-    <small>posted on: <?php the_time('F j,Y') ?> at <?php the_time('g:i a')?> in <?php the_category(); ?></small>
-   <p><?php the_content(); ?></p>
-   <?php endwhile; ?>
-   <?php endif; ?>
-<?php  get_footer(); ?>
->>>>>>> 0828cdc4437de734a4f1bfb68b27cce5418f500d
-=======
 <?php
 /*
 Template Name: About Page
@@ -61,9 +28,39 @@ get_header();
                 <p>Our goal is simple: to empower curious minds and passionate techies by delivering accurate, useful, and accessible content. Whether you're a seasoned developer or just getting started, we aim to be your go-to resource for tech knowledge.</p>
             </div>
         </section>
- 
+
+        <section class="about-what-we-cover">
+                <div class="container">
+
+                <h2>What We Cover </h2>
+                <ul>
+                    <li>Programing tutorials and tips</li>
+                    <li>Software and app reviews</li>
+                    <li>AU, machine learning and data cience insights</li>
+                    <li>Web development, DevOps , and cloud computing</li>
+                    <li>trends in tech and industry news,</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="about-contact">
+            <div class="container">
+                    <h2>Want to Connect? </h2>
+                    <p>We love hearing from our readers! Reach out to us via our <a href="/contact">Contact page</a>or follow us on social media to stay uptade.</p>
+
+
+
+            </div>
+
+        </section>
+
         
     </main>
 </div>
- 
->>>>>>> 543f94dd56e184567e949a9ea15af2bf6e5d2241
+
+
+
+<?php   get_footer();   ?>

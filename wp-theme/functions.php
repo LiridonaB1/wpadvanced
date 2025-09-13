@@ -1,7 +1,6 @@
 <?php
 function load_scripts(){
 
-<<<<<<< HEAD
  
 
     wp_enqueue_style('bootstrap_style', get_template_directory_uri() . "/css/bootstrap.min.css", false, '1.1', 'all');
@@ -11,10 +10,6 @@ function load_scripts(){
     wp_enqueue_script('bootstrap_js',get_template_directory_uri()."/js/bootstrap.bundle.min.js",false,'1.1',true);
     wp_enqueue_script('wp_script',get_template_directory_uri()."/js/script.js",false,'1.1',true);
     
-=======
-    wp_enqueue_script('wp_script',get_template_directory_uri()."/js/script.js",false,'1.1',true);
-    wp_enqueue_script('bootstrap_js',get_template_directory_uri()."/js/bootstrap.bundle.min.js",false,'1.1',true);
->>>>>>> df52d5e7db7bb3b79d04ef8a8c4e24d45bd0b6ac
 }
 add_action('wp_enqueue_scripts','load_scripts');
 
@@ -51,7 +46,6 @@ add_action('after_setup_theme', 'config',0);
 
 function wpdevs_sidebars() {
   register_sidebar(
-<<<<<<< HEAD
     array(
       'name' => 'Blog Sidebar',
       'id' => 'sidebar-blog',
@@ -63,20 +57,6 @@ function wpdevs_sidebars() {
     )
   );
     register_sidebar(
-=======
-     array(
-       'name' => 'Blog Sidebar',
-       'id' => 'sidebar-blog',
-       'description' => 'This is the Blog Sidebar.You can add your widgets here.',
-       'before_widget' => '<div class="wiget-wrapper">',
-       'after_widget' => '</div>',
-       'before_title' => '<h4 class="widget-title">',
-       'after_title' => '</h4>'
-     )
-  );
-
-   register_sidebar(
->>>>>>> df52d5e7db7bb3b79d04ef8a8c4e24d45bd0b6ac
      array(
        'name' => 'Service 1',
        'id' => 'services-1',
@@ -87,11 +67,7 @@ function wpdevs_sidebars() {
        'after_title' => '</h4>'
      )
   );
-<<<<<<< HEAD
       register_sidebar(
-=======
-   register_sidebar(
->>>>>>> df52d5e7db7bb3b79d04ef8a8c4e24d45bd0b6ac
      array(
        'name' => 'Service 2',
        'id' => 'services-2',
@@ -102,15 +78,9 @@ function wpdevs_sidebars() {
        'after_title' => '</h4>'
      )
   );
-<<<<<<< HEAD
       register_sidebar(
      array(
        'name' => 'Service 3',
-=======
-     register_sidebar(
-     array(
-       'name' => 'Service 2',
->>>>>>> df52d5e7db7bb3b79d04ef8a8c4e24d45bd0b6ac
        'id' => 'services-3',
        'description' => 'Third service area',
        'before_widget' => '<div class="wiget-wrapper">',
@@ -120,10 +90,6 @@ function wpdevs_sidebars() {
      )
   );
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> df52d5e7db7bb3b79d04ef8a8c4e24d45bd0b6ac
 add_action('widgets_init','wpdevs_sidebars');
 
 ?>

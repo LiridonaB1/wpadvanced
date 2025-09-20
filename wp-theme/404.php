@@ -1,0 +1,36 @@
+<?php get_header();  ?>
+
+<div id="content" class="site-content">
+     <main id="main" class="site-main">
+     <div class="container">
+        <div class="error-404">
+
+
+            <header>
+                <h1>Page Not Found</h1>
+                <p>Unfortunately, the page you tried to reach does not exsit on this site.</p>
+
+            </header>
+
+            <div class="error">
+                <p>How about doing a search </p>
+                <?php get_search_form(); ?>
+                <?php
+                
+                 the_Widget(
+                    'WP_widget_Recent_Posts',
+                    array(
+                        'title' => 'Latest Posts',
+                        'number' => 3
+                    )
+                    );
+                
+                
+                
+                ?>
+            </div>
+        </div>
+     </div>
+     </main>
+</div>
+<?php get_footer(); ?>

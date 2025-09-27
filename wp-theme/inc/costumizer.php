@@ -9,7 +9,7 @@ function wpdevs_costumizer($wp_costumize){
         )
     );
 
-    $wp_costumize ->add_settings(
+    $wp_costumize ->add_setting(
         'sec_copyright',
         array(
             'type'=>'theme_mod',

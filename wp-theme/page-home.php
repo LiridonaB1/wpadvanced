@@ -1,16 +1,16 @@
 <?php  get_header(); ?>
 
-<div id="content">
+<div id="container">
    <div id="inner_container">
-      <div id="img_container">
+      <div class="img_container">
          <img src="<?php echo get_template_directory_uri(); ?>/images/foto1.jpg">
       </div>
 
-       <div id="img_container">
+       <div class="img_container">
          <img src="<?php echo get_template_directory_uri(); ?>/images/foto2.jpg">
       </div>
 
-       <div id="img_container">
+       <div class="img_container">
          <img src="<?php echo get_template_directory_uri(); ?>/images/foto3.jpg">
       </div>
       <div id="overlay">

@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
  function wpdevs_costomizer($wp_customize){
     $wp_customize -> add_section(
         'sec_copyright',
@@ -32,4 +33,46 @@ add_action('customize_register','wpdevs_customizer');
 
 
 
+=======
+  function wpdevs_customizer($wp_customize){
+
+        $wp_customize -> add_section(
+          'sec_copyright',
+          array(
+             'title' => 'Copyright Settings',
+             'description' => 'Copyright Settings'
+          )
+          );
+
+
+        $wp_customize -> add_setting (
+
+            'sec_copyright' ,
+            array(
+
+                'type' => 'theme_mod',
+                'default' => 'Copyright X - All rights Reserved',
+                'sanitize_callback' => 'sanitize_text_field'
+
+            )
+        ) ;
+
+         
+         $wp_customize -> add_control(
+
+             'sec_copyright' , 
+             array(
+
+                    'label' => 'Copyright Information',
+                    'description' => 'Please, type your copyright here',
+                    'section' => 'sec_copyright',
+                     'type' => 'text'
+             )
+             );
+  }
+
+
+add_action('customize_register','wpdevs_customizer');
+
+>>>>>>> 85bd0740a7fa3d3f951bf3de66afc6b1744fb2c8
 ?>

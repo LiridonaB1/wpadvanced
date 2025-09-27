@@ -1,21 +1,20 @@
 <?php
+require get_template_directory() . '/inc/customizer.php';
 function load_scripts(){
 
  
 
-    wp_enqueue_style('bootstrap_style', get_template_directory_uri() . "/css/bootstrap.min.css", false, '1.1', 'all');
-    wp_enqueue_style('wp_style', get_template_directory_uri() . "/style.css", false, '1.1', 'all');
+    wp_enqueue_style('style', get_template_directory_uri() . "/style.css", false, '1.1', 'all');
+    wp_enqueue_script('main', get_template_directory_uri() . "/js/main.js", array(), '1.0', false);
 
      
-    wp_enqueue_script('bootstrap_js',get_template_directory_uri()."/js/bootstrap.bundle.min.js",false,'1.1',true);
-    wp_enqueue_script('wp_script',get_template_directory_uri()."/js/script.js",false,'1.1',true);
-    
+   
 }
 add_action('wp_enqueue_scripts','load_scripts');
 
 
 function config() {
-
+ 
    register_nav_menus(
   
       array(

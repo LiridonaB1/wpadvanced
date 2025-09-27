@@ -1,38 +1,41 @@
-<?php 
-function wpdevs_customizer($wp_customize){
+<?php
+  function wpdevs_customizer($wp_customize){
 
-    $wp_customize -> add_section(
-        'sec_copyright',
-        array(
-            'title' => 'Copyright Settings',
-            'description' => 'Copyright Settings'
-        )
-        );
+        $wp_customize -> add_section(
+          'sec_copyright',
+          array(
+             'title' => 'Copyright Settings',
+             'description' => 'Copyright Settings'
+          )
+          );
 
-        $wp_customize -> add_settings (
+
+        $wp_customize -> add_setting (
 
             'sec_copyright' ,
             array(
 
                 'type' => 'theme_mod',
-                'default'=> 'Copyright X -All rights Reserved',
+                'default' => 'Copyright X - All rights Reserved',
                 'sanitize_callback' => 'sanitize_text_field'
+
             )
-            );
+        ) ;
 
-            $wp_customize -> add_control(
+         
+         $wp_customize -> add_control(
 
-                'sec_copyright' ,
-                array(
+             'sec_copyright' , 
+             array(
 
-                    'label' => 'Copyright Information', 
-                    'description' => 'Please, type your copyright here'
+                    'label' => 'Copyright Information',
+                    'description' => 'Please, type your copyright here',
                     'section' => 'sec_copyright',
-                    'type' => 'text'
-                )
-                );
+                     'type' => 'text'
+             )
+             );
+  }
 
-}
 
 add_action('customize_register','wpdevs_customizer');
 
